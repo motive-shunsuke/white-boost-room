@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import './Header.css';
+import logoImg from '../assets/logo-animation.png';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,6 +12,7 @@ const Header = () => {
         <header className="header">
             <div className="container header-container">
                 <div className="logo">
+                    <img src={logoImg} alt="Logo" className="header-logo-img" />
                     <span className="text-navy">BOOST</span> <span className="text-orange">ROOM</span>
                 </div>
 
