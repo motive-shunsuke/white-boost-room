@@ -11,7 +11,7 @@ const Access = () => {
                 <div className="access-content">
                     {/* Left Side: Info */}
                     <div className="access-info bg-white">
-                        <h3 className="store-name text-navy">BOOST ROOM <span className="text-orange text-sm">山形七日町店</span></h3>
+                        <h3 className="store-name text-navy">BOOST ROOM</h3>
 
                         {/* Address Section */}
                         <div className="info-row">

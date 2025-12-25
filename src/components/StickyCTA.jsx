@@ -15,7 +15,7 @@ const StickyCTA = () => {
                 >
                     <span className="btn-icon">LINE</span>
                     <span className="btn-text">
-                        <span className="btn-main">LINEで予約・問い合わせ ＞</span>
+                        <span className="btn-main">LINEで予約・問い合わせ</span>
                         <span className="btn-sub">見学・体験入店もこちら</span>
                     </span>
                 </a>
