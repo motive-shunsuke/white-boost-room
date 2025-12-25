@@ -32,6 +32,16 @@
     margin-bottom: 0.5rem;
 }
 
+.address-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon-pin {
+    flex-shrink: 0;
+}
+
 .text-sm {
     font-size: 1rem;
     font-weight: 700;
