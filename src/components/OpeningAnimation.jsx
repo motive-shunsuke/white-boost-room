@@ -12,9 +12,10 @@ const OpeningAnimation = ({ onComplete }) => {
         }, 1500);
 
         // Notify parent after animation finishes
+        // 1.5s wait + 4.0s animation + 0.5s buffer
         const timer2 = setTimeout(() => {
             onComplete();
-        }, 5000); // 1.5s + 3.5s animation
+        }, 6000);
 
         return () => {
             clearTimeout(timer1);
