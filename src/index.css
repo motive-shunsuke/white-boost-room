@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+:root {
+  /* Colors */
+  --color-bg-main: #FFFFFF;
+  /* White */
+  --color-bg-sub: #F8FAFC;
+  /* Light Gray */
+
+  --color-primary: #ea580c;
+  /* High Contrast Orange for Light BG */
+  --color-primary-glow: rgba(234, 88, 12, 0.2);
+
+  --color-text-main: #0F172A;
+  /* Deep Navy */
+  --color-text-sub: #475569;
+  /* Slate 600 */
+
+  --color-glass: rgba(255, 255, 255, 0.8);
+  --color-border: #e2e8f0;
+
+  /* Fonts */
+  --font-en: 'Montserrat', sans-serif;
+  --font-jp: 'Noto Sans JP', sans-serif;
+
+  --spacing-container: 1.5rem;
+  --max-width-container: 1024px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-jp);
+  background-color: var(--color-bg-sub);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.en-font {
+  font-family: var(--font-jp);
+  /* Use JP font primarily now, only specific English words use Montserrat */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Utilities */
+.container {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding: 0 var(--spacing-container);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #0F172A 0%, #334155 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-orange {
+  color: var(--color-primary);
+}
+
+.text-navy {
+  color: var(--color-text-main);
+}
+
+.text-sub {
+  color: var(--color-text-sub);
+}
+
+.bg-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.glow-text {
+  /* Removed strong glow for readability on white, minimal shadow instead */
+  text-shadow: none;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}

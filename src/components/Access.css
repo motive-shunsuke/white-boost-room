@@ -1,0 +1,90 @@
+.access {
+    background-color: var(--color-bg-sub);
+}
+
+.access-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .access-content {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 3rem;
+    }
+}
+
+.access-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.store-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.text-sm {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+
+.info-row {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.address {
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+.building {
+    font-weight: 800;
+    display: block;
+    font-size: 1.1rem;
+    margin-top: 0.25rem;
+}
+
+.landmarks-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.landmark-badge {
+    font-size: 0.85rem;
+    background-color: #f1f5f9;
+    padding: 0.25rem 0.75rem;
+    border-radius: 99px;
+    font-weight: 600;
+}
+
+.hours {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.map-container {
+    flex: 1;
+    min-height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Remove inverted filter for light mode */
+.map-iframe {
+    filter: none;
+}

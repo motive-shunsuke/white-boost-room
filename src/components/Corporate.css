@@ -1,0 +1,63 @@
+.corporate {
+    background-color: #f1f5f9;
+    /* Slightly darker than sub bg to separate */
+}
+
+.corporate-card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+.bg-navy {
+    background-color: var(--color-text-main);
+}
+
+.corp-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin-bottom: 1.5rem;
+}
+
+.corp-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--color-text-sub);
+    margin-bottom: 1.5rem;
+}
+
+.desktop-br {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .desktop-br {
+        display: inline;
+    }
+}
+
+.corp-cta {
+    margin-top: 2rem;
+}
+
+.btn-corp {
+    display: inline-block;
+    background-color: var(--color-text-main);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 99px;
+    font-weight: 700;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.2);
+}
+
+.btn-corp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(15, 23, 42, 0.3);
+    background-color: #1e293b;
+}

@@ -1,0 +1,7 @@
+/* Basic App layout */
+.app-container {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 80px;
+  /* Space for Sticky CTA */
+}

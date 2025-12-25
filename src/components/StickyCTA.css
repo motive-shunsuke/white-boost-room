@@ -1,0 +1,57 @@
+.sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 15px var(--spacing-container);
+    border-top: 1px solid var(--color-border);
+    z-index: 1000;
+    padding-bottom: max(15px, env(safe-area-inset-bottom));
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sticky-cta-container {
+    display: flex;
+    gap: 12px;
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+}
+
+.btn-insta {
+    flex: 1;
+    max-width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    font-weight: 600;
+    border-radius: 99px;
+    /* More rounded */
+    font-size: 0.8rem;
+    height: 50px;
+}
+
+.btn-line {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #06C755 0%, #05a546 100%);
+    color: white;
+    font-weight: 700;
+    border-radius: 99px;
+    font-size: 1rem;
+    height: 50px;
+    box-shadow: 0 0 15px rgba(6, 199, 85, 0.4);
+}
+
+@media (min-width: 768px) {
+    .sticky-cta {
+        display: none;
+    }
+}
