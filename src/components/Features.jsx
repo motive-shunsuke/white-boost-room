@@ -4,7 +4,7 @@ import './Features.css';
 const Features = () => {
     // Services stay mostly the same but maybe smaller
     const services = [
-        { icon: <Wifi size={24} />, label: "Wi-Fi 6" },
+        { icon: <Wifi size={24} />, label: "Wi-Fi" },
         { icon: <Coffee size={24} />, label: "フリードリンク" },
         { icon: <BookOpen size={24} />, label: "ライブラリ" },
         { icon: <Monitor size={24} />, label: "モニター貸出" },

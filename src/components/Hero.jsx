@@ -23,7 +23,7 @@ const Hero = () => {
                 <div className="campaign-banner bg-white">
                     <p className="campaign-date text-orange">2026.1.5 オープン！</p>
                     <p className="campaign-offer text-navy">
-                        1/31まで 入会金 <span className="strike text-sub">¥5,500</span> → <span className="highlight text-orange">¥0</span>
+                        2/28まで 入会金 <span className="strike text-sub">¥5,500</span> → <span className="highlight text-orange">¥0</span>
                     </p>
                 </div>
             </div>

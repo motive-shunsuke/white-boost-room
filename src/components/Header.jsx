@@ -25,7 +25,7 @@ const Header = () => {
                         rel="noopener noreferrer"
                         className="header-line-btn"
                     >
-                        LINEで入館証発行
+                        LINEで質問・相談
                     </a>
                 </nav>
 
