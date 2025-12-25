@@ -5,15 +5,8 @@ const StickyCTA = () => {
     return (
         <div className="sticky-cta">
             <div className="sticky-cta-container">
-                <a
-                    href="https://www.instagram.com/boostroom_official/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-insta"
-                >
-                    <Instagram size={20} />
-                    <span>Instagram</span>
-                </a>
+                {/* Instagram removed for mobile sticky as requested */}
+
                 <a
                     href="https://line.me/R/ti/p/@807fdfdt"
                     target="_blank"

@@ -15,39 +15,55 @@
 
 .sticky-cta-container {
     display: flex;
-    gap: 12px;
+    justify-content: center;
     max-width: var(--max-width-container);
     margin: 0 auto;
 }
 
-.btn-insta {
-    flex: 1;
-    max-width: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    color: white;
-    font-weight: 600;
-    border-radius: 99px;
-    /* More rounded */
-    font-size: 0.8rem;
-    height: 50px;
-}
+/* btn-insta removed */
 
 .btn-line {
-    flex: 2;
+    width: 100%;
+    max-width: 400px;
+    /* Prevent being too wide on tablets */
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(90deg, #06C755 0%, #05a546 100%);
+    background: #06C755;
     color: white;
     font-weight: 700;
     border-radius: 99px;
-    font-size: 1rem;
-    height: 50px;
-    box-shadow: 0 0 15px rgba(6, 199, 85, 0.4);
+    padding: 0.75rem 1rem;
+    box-shadow: 0 4px 15px rgba(6, 199, 85, 0.4);
+    text-align: left;
+    gap: 1rem;
+}
+
+.btn-icon {
+    font-size: 1.2rem;
+    font-weight: 900;
+    background: white;
+    color: #06C755;
+    padding: 2px 8px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.btn-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.btn-main {
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.btn-sub {
+    font-size: 0.7rem;
+    opacity: 0.9;
+    font-weight: normal;
 }
 
 @media (min-width: 768px) {
