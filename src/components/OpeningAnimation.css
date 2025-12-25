@@ -11,8 +11,8 @@
     justify-content: center;
     z-index: 9999;
     /* Smoothly fade the background color only, keeping child logo visible */
-    /* Wait 3s (while logo moves), then fade out background over 1s */
-    transition: background-color 1s ease-out 3s, visibility 1.5s 3s;
+    /* Wait 1.5s (mostly flown away), then fade out background over 0.7s */
+    transition: background-color 0.7s ease-out 1.5s, visibility 2.2s 1.5s;
     pointer-events: auto;
 }
 
@@ -32,8 +32,8 @@
     /* Remove white background from JPG */
     /* mix-blend-mode removed */
 
-    /* Initial Enter Animation */
-    animation: fadeIn 1s ease-out;
+    /* Initial Enter Animation (Fast) */
+    animation: fadeIn 0.8s ease-out;
 }
 
 /* Exit state for Overlay: Fade background only */
@@ -46,8 +46,8 @@
 
 /* Exit Animation: J-Curve Trajectory */
 .opening-overlay.exit .opening-logo-container {
-    /* Slower duration (4s) and smoother easing (less bouncy) */
-    animation: exitJCurve 4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    /* Faster duration (2.2s) to fit 3s budget */
+    animation: exitJCurve 2.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 @keyframes fadeIn {

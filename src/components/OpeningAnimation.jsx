@@ -6,16 +6,16 @@ const OpeningAnimation = ({ onComplete }) => {
     const [isExiting, setIsExiting] = useState(false);
 
     useEffect(() => {
-        // Show for 1.5 seconds, then start exit
+        // Show for 0.8 seconds, then start exit
         const timer1 = setTimeout(() => {
             setIsExiting(true);
-        }, 1500);
+        }, 800);
 
         // Notify parent after animation finishes
-        // 1.5s wait + 4.0s animation + 0.5s buffer
+        // 0.8s wait + 2.2s animation = 3.0s total
         const timer2 = setTimeout(() => {
             onComplete();
-        }, 6000);
+        }, 3000);
 
         return () => {
             clearTimeout(timer1);
