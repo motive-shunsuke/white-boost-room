@@ -10,12 +10,9 @@
     align-items: center;
     justify-content: center;
     z-index: 9999;
-    transition: opacity 1s ease-out;
-    /* Smooth fade out for the background */
+    /* Smoothly fade the background color only, keeping child logo visible */
+    transition: background-color 1.5s ease-out, visibility 1.5s;
     pointer-events: auto;
-    /* Allow scrolling underneath even while logo is there? Maybe safer to block interaction?
-                           If transparent, user sees site. Let's keep pointer-events auto until exit?
-                           Actually, standard splash blocks interaction. */
 }
 
 .opening-logo-container {
