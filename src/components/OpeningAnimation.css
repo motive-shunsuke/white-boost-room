@@ -29,20 +29,18 @@
     height: auto;
     object-fit: contain;
     /* Remove white background from JPG */
-    mix-blend-mode: multiply;
+    /* mix-blend-mode removed */
 
     /* Initial Enter Animation */
     animation: fadeIn 1s ease-out;
 }
 
-/* Exit Animation: Slide up-right and fade out */
+/* Exit state for Overlay: Fade background only */
 .opening-overlay.exit {
-    opacity: 0;
-    transform: translate(100%, -100%);
-    border-radius: 0 0 0 100%;
-    /* Curved edge effect for flair */
+    /* Fade white background to transparent so HP shows through */
+    background-color: rgba(255, 255, 255, 0);
     pointer-events: none;
-    /* Allow clicks pass through as it exits */
+    /* Do NOT set opacity: 0 here, or it hides the logo too! */
 }
 
 /* Exit Animation: J-Curve Trajectory */
