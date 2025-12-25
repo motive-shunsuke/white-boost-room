@@ -11,7 +11,8 @@
     justify-content: center;
     z-index: 9999;
     /* Smoothly fade the background color only, keeping child logo visible */
-    transition: background-color 1.5s ease-out, visibility 1.5s;
+    /* Wait 3s (while logo moves), then fade out background over 1s */
+    transition: background-color 1s ease-out 3s, visibility 1.5s 3s;
     pointer-events: auto;
 }
 
