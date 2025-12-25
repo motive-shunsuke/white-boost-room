@@ -16,7 +16,7 @@ const Hero = () => {
                 </h1>
                 <p className="hero-subtitle text-sub">
                     家やカフェより静かで、図書館より自由。<br />
-                    BOOST ROOMは、本気になれる自習室です。
+                    BOOST ROOMは、本気に<span style={{ display: 'inline-block' }}>なれる自習室です。</span>
                 </p>
 
                 {/* Campaign Banner - Light Style */}
