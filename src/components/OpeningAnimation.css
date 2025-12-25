@@ -1,0 +1,48 @@
+.opening-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: all 0.7s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.opening-logo-container {
+    width: 200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opening-logo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Exit Animation: Slide up-right and fade out */
+.opening-overlay.exit {
+    opacity: 0;
+    transform: translate(100%, -100%);
+    border-radius: 0 0 0 100%;
+    /* Curved edge effect for flair */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
