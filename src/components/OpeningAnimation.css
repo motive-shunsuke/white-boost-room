@@ -32,11 +32,9 @@
     object-fit: contain;
     /* Remove white background from JPG */
     mix-blend-mode: multiply;
-    /* Push near-whites to pure white to avoid faint box */
-    filter: contrast(1.1) brightness(1.05);
 
     /* Initial Enter Animation */
-    animation: fadeIn 1.5s ease-out;
+    animation: fadeIn 1s ease-out;
 }
 
 /* Exit Animation: Slide up-right and fade out */

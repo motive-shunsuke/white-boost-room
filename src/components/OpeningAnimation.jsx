@@ -14,7 +14,7 @@ const OpeningAnimation = ({ onComplete }) => {
         // Notify parent after animation finishes
         const timer2 = setTimeout(() => {
             onComplete();
-        }, 5500); // 1.5s + 3.5s animation cushion
+        }, 4000); // 1.5s + 2.5s animation
 
         return () => {
             clearTimeout(timer1);
