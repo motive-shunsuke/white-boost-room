@@ -4,16 +4,22 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #ffffff;
+    /* Transparent background so HP is visible */
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 9999;
     transition: all 0.7s cubic-bezier(0.65, 0, 0.35, 1);
+    pointer-events: auto;
+    /* Allow scrolling underneath even while logo is there? Maybe safer to block interaction? 
+                           If transparent, user sees site. Let's keep pointer-events auto until exit? 
+                           Actually, standard splash blocks interaction. */
 }
 
 .opening-logo-container {
-    width: 200px;
+    width: 250px;
+    /* Slightly larger */
     height: auto;
     display: flex;
     align-items: center;
@@ -24,7 +30,11 @@
     width: 100%;
     height: auto;
     object-fit: contain;
-    animation: fadeIn 0.5s ease-out;
+    /* Remove white background from JPG */
+    mix-blend-mode: multiply;
+
+    /* Initial Enter Animation */
+    animation: fadeIn 1s ease-out;
 }
 
 /* Exit Animation: Slide up-right and fade out */
@@ -33,16 +43,46 @@
     transform: translate(100%, -100%);
     border-radius: 0 0 0 100%;
     /* Curved edge effect for flair */
+    pointer-events: none;
+    /* Allow clicks pass through as it exits */
+}
+
+/* Exit Animation: J-Curve Trajectory */
+.opening-overlay.exit .opening-logo-container {
+    animation: exitJCurve 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
 
     to {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@keyframes exitJCurve {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+
+    20% {
+        /* Dip down and slightly left (The 'hook' of the J) */
+        opacity: 1;
+        transform: translate(-30px, 80px) scale(0.9);
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        /* Shoot to Top-Right */
+        opacity: 0;
+        transform: translate(120vw, -120vh) scale(0.5) rotate(20deg);
     }
 }
