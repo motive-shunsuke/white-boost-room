@@ -30,10 +30,11 @@
 }
 
 .header-logo-img {
-    height: 40px;
-    /* Adjust to fit header */
+    height: 32px;
+    /* Slightly smaller to match text height */
     width: auto;
-    margin-right: 0.5rem;
+    margin-right: 0.4rem;
+    object-fit: contain;
 }
 
 .desktop-nav {
