@@ -49,7 +49,7 @@
 
 /* Exit Animation: J-Curve Trajectory */
 .opening-overlay.exit .opening-logo-container {
-    animation: exitJCurve 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    animation: exitJCurve 3.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 @keyframes fadeIn {

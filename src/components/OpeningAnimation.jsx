@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './OpeningAnimation.css';
-import logoLine from '../assets/logo-animation.jpg';
+import logoLine from '../assets/logo-animation.png';
 
 const OpeningAnimation = ({ onComplete }) => {
     const [isExiting, setIsExiting] = useState(false);
@@ -14,7 +14,7 @@ const OpeningAnimation = ({ onComplete }) => {
         // Notify parent after animation finishes
         const timer2 = setTimeout(() => {
             onComplete();
-        }, 4000); // 1.5s + 2.5s animation
+        }, 5000); // 1.5s + 3.5s animation
 
         return () => {
             clearTimeout(timer1);
