@@ -25,8 +25,8 @@ function App() {
       <main>
         <Hero />
         <Features />
-        <VideoSection />
         <Pricing />
+        <VideoSection />
         <Access />
         <Corporate />
       </main>

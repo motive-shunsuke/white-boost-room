@@ -4,11 +4,18 @@ const VideoSection = () => {
     return (
         <section className="video-section section-padding">
             <div className="container">
-                <h2 className="section-title text-navy text-center">MOVIE</h2>
+                <h2 className="section-title text-navy text-center">MEDIA</h2>
                 <div className="title-underline bg-orange center-margin"></div>
-                <p className="text-center text-sub mb-8">
-                    施設の雰囲気を動画でご覧いただけます
-                </p>
+
+                <div className="text-center mb-8">
+                    <p className="text-xl font-bold text-navy mb-2">
+                        山形テレビ（YTS）で特集されました！
+                    </p>
+                    <p className="text-sub">
+                        最新の設備と集中できる空間がテレビで紹介されました。<br className="sp-only" />
+                        放送された映像をご覧いただけます。
+                    </p>
+                </div>
 
                 <div className="video-container">
                     <iframe
