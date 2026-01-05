@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://boost-room.com/sitemap.xml
