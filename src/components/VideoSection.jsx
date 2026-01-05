@@ -11,8 +11,9 @@ const VideoSection = () => {
                     <p className="text-xl font-bold text-navy mb-2">
                         山形テレビ（YTS）にて特集放映
                     </p>
-                    <p className="text-sub">
-                        当施設の先進的な学習環境が、地域メディアにて特集されました。実際の放送内容は下記よりご覧いただけます。
+                    <p className="text-sub video-description">
+                        当施設の先進的な学習環境が、地域メディアにて特集されました。<br />
+                        実際の放送内容は下記よりご覧いただけます。
                     </p>
                 </div>
 

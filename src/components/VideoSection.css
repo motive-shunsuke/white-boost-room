@@ -4,6 +4,14 @@
     padding-bottom: 4rem;
 }
 
+.video-description {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    color: #4b5563;
+    /* Ensuring a good reading color if not globally set */
+}
+
 .video-container {
     position: relative;
     width: 100%;
@@ -28,5 +36,10 @@
 @media (max-width: 768px) {
     .video-container {
         border-radius: 8px;
+    }
+
+    .video-description {
+        padding: 0 1.5rem;
+        font-size: 0.95rem;
     }
 }
