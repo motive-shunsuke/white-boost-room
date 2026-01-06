@@ -13,7 +13,7 @@ const VideoSection = () => {
                     </p>
                     <p className="text-sub video-description">
                         当施設の先進的な学習環境が、地域メディアにて特集されました。<br />
-                        実際の放送内容は下記よりご覧いただけます。
+                        放送内容は下記よりご覧いただけます。
                     </p>
                 </div>
 
