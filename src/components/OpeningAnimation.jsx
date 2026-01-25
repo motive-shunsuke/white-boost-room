@@ -26,7 +26,14 @@ const OpeningAnimation = ({ onComplete }) => {
     return (
         <div className={`opening-overlay ${isExiting ? 'exit' : ''}`}>
             <div className="opening-logo-container">
-                <img src={logoLine} alt="BOOST ROOM" className="opening-logo" />
+                <img
+                    src={logoLine}
+                    alt="BOOST ROOM"
+                    className="opening-logo"
+                    width="200"
+                    height="200"
+                    fetchPriority="high"
+                />
             </div>
         </div>
     );

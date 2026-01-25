@@ -1,3 +1,4 @@
+import LazyYouTube from './LazyYouTube';
 import './VideoSection.css';
 
 const VideoSection = () => {
@@ -18,16 +19,10 @@ const VideoSection = () => {
                 </div>
 
                 <div className="video-container">
-                    <iframe
-                        width="560"
-                        height="315"
-                        src="https://www.youtube-nocookie.com/embed/omSkQ-Utu2g?si=F4dCH12KOXtCTUpf"
-                        title="BoostRoom Promotion Video"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
-                    ></iframe>
+                    <LazyYouTube
+                        videoId="omSkQ-Utu2g"
+                        title="BoostRoom 山形テレビ特集"
+                    />
                 </div>
             </div>
         </section>
@@ -35,3 +30,4 @@ const VideoSection = () => {
 };
 
 export default VideoSection;
+

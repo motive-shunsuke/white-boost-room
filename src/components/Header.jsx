@@ -12,7 +12,14 @@ const Header = () => {
         <header className="header">
             <div className="container header-container">
                 <div className="logo">
-                    <img src={logoImg} alt="Logo" className="header-logo-img" />
+                    <img
+                        src={logoImg}
+                        alt="BoostRoom ロゴ"
+                        className="header-logo-img"
+                        width="40"
+                        height="40"
+                        fetchPriority="high"
+                    />
                     <span className="text-navy">BOOST</span> <span className="text-orange">ROOM</span>
                 </div>
 

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Wifi, Coffee, BookOpen, Monitor, Activity, ShieldCheck, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay, Navigation } from 'swiper/modules';
+import OptimizedImage from './OptimizedImage';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -116,7 +117,12 @@ const Features = () => {
                                         {loungeImages.map((src, index) => (
                                             <SwiperSlide key={index} onClick={() => openLightbox(loungeImages, index)}>
                                                 <div className="lounge-slide-img-wrapper cursor-pointer">
-                                                    <img src={src} alt={`Lounge Area ${index + 1}`} className="lounge-slide-img" />
+                                                    <OptimizedImage
+                                                        src={src}
+                                                        alt={`ラウンジエリア 写真${index + 1}`}
+                                                        aspectRatio="4/3"
+                                                        className="lounge-slide-img"
+                                                    />
                                                 </div>
                                             </SwiperSlide>
                                         ))}
@@ -153,7 +159,12 @@ const Features = () => {
                                         {focusImages.map((src, index) => (
                                             <SwiperSlide key={index} onClick={() => openLightbox(focusImages, index)}>
                                                 <div className="lounge-slide-img-wrapper cursor-pointer">
-                                                    <img src={src} alt={`Focus Area ${index + 1}`} className="lounge-slide-img" />
+                                                    <OptimizedImage
+                                                        src={src}
+                                                        alt={`集中エリア 写真${index + 1}`}
+                                                        aspectRatio="4/3"
+                                                        className="lounge-slide-img"
+                                                    />
                                                 </div>
                                             </SwiperSlide>
                                         ))}
@@ -199,10 +210,12 @@ const Features = () => {
                             <ChevronLeft size={24} />
                         </button>
 
-                        <img
+                        <OptimizedImage
                             src={lightboxState.images[lightboxState.currentIndex]}
-                            alt="Area Large"
+                            alt="エリア拡大写真"
                             className="lightbox-img"
+                            priority={true}
+                            style={{ maxWidth: '90vw', maxHeight: '80vh', width: 'auto', height: 'auto' }}
                         />
 
                         <button className="lightbox-nav lightbox-next" onClick={handleNextImage}>

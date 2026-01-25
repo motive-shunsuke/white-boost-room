@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -14,6 +14,12 @@ import './App.css';
 function App() {
   const [showAnimation, setShowAnimation] = useState(true);
 
+  // Dispatch event for prerenderer when content is ready
+  useEffect(() => {
+    if (!showAnimation) {
+      document.dispatchEvent(new Event('render-complete'));
+    }
+  }, [showAnimation]);
   return (
     <div className="app-container">
       {showAnimation && (

@@ -1,19 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BoostRoom | 山形で革命的な自習室 - 圧倒的集中空間</title>
+
+  <!-- Preconnect for critical resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://www.youtube-nocookie.com" />
+  <link rel="dns-prefetch" href="https://maps.google.com" />
+
+  <!-- Non-blocking Google Fonts -->
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" />
+  </noscript>
+
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <title>山形市の自習室 BoostRoom (ブーストルーム) | 24時間利用可能</title>
   <meta name="description"
-    content="【山形市】BoostRoomは、本気で成果を出したい人のためのプレミアム自習室。高校生・受験生・社会人のための最高の没入空間。24時間利用可能。今すぐ無料体験へ。" />
+    content="山形市七日町の自習室 BoostRoom(ブーストルーム)。24時間365日利用可能なコワーキングスペース。高校生、受験生、社会人のための集中空間。Wi-Fi・電源完備。" />
+  <link rel="canonical" href="https://boost-room.com/" />
 
   <!-- OGP -->
-  <meta property="og:title" content="BoostRoom | 山形で革命的な自習室 - 圧倒的集中空間" />
-  <meta property="og:description" content="【山形市】本気で成果を出したい人のためのプレミアム自習室。高校生・受験生・社会人のための最高の没入空間。24時間利用可能。" />
+  <meta property="og:title" content="山形市の自習室 BoostRoom (ブーストルーム) | 24時間利用可能" />
+  <meta property="og:description"
+    content="山形市七日町の自習室 BoostRoom(ブーストルーム)。24時間365日利用可能なコワーキングスペース。高校生、受験生、社会人のための集中空間。" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://boost-room.com" />
+  <meta property="og:url" content="https://boost-room.com/" />
   <meta property="og:image" content="https://boost-room.com/ogp.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
@@ -22,22 +42,36 @@
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "BoostRoom",
+      "@id": "https://boost-room.com/#business",
+      "name": "BoostRoom（ブーストルーム）",
+      "alternateName": "BOOST ROOM",
       "image": "https://boost-room.com/ogp.jpg",
+      "logo": "https://boost-room.com/favicon.png",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://boost-room.com"
+        "@id": "https://boost-room.com/"
       },
-      "url": "https://boost-room.com",
-      "telephone": "",
-      "priceRange": "¥330 - ¥9,900",
+      "url": "https://boost-room.com/",
+      "telephone": "090-2978-7412",
+      "priceRange": "¥330〜¥9,900",
+      "currenciesAccepted": "JPY",
+      "paymentAccepted": "現金, クレジットカード",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "七日町1-2-42 TAN6SQUARE 3階",
-        "addressLocality": "Yamagata",
-        "addressRegion": "Yamagata",
+        "addressLocality": "山形市",
+        "addressRegion": "山形県",
         "postalCode": "990-0042",
         "addressCountry": "JP"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 38.2554,
+        "longitude": 140.3396
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "山形市"
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
@@ -53,7 +87,12 @@
         "opens": "07:00",
         "closes": "22:00"
       },
-      "description": "山形市七日町のプレミアム自習室 BoostRoom。高校生、受験生、社会人のための圧倒的集中空間。Wi-Fi・電源完備。"
+      "sameAs": [
+        "https://www.instagram.com/boostroom_official",
+        "https://line.me/R/ti/p/@807fdfdt"
+      ],
+      "description": "山形市七日町の自習室・コワーキングスペース。高校生、受験生、社会人のための集中空間。Wi-Fi・電源完備。月額2,500円から利用可能。",
+      "keywords": "自習室,山形市,コワーキングスペース,勉強カフェ,受験勉強,七日町"
     }
   </script>
 </head>

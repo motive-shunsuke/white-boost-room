@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+/* Google Fonts are loaded non-blocking in index.html */
 
 :root {
   /* Colors */
@@ -76,6 +76,7 @@ button {
 .text-gradient {
   background: linear-gradient(135deg, #0F172A 0%, #334155 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
