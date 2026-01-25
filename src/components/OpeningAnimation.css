@@ -23,8 +23,9 @@
     }
 }
 
-/* User-Agent specific hiding via Body class (handled in JS) */
-body.is-bot .opening-overlay {
+/* User-Agent specific hiding via Body/HTML class (handled in JS/Inline Script) */
+body.is-bot .opening-overlay,
+html.is-bot .opening-overlay {
     display: none !important;
 }
 

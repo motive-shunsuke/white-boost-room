@@ -11,18 +11,21 @@ import StickyCTA from './components/StickyCTA';
 import OpeningAnimation from './components/OpeningAnimation';
 import './App.css';
 
+// Bot detection function defined outside to be used for initial state
+const detectBot = () => {
+  if (typeof navigator === 'undefined') return false;
+  return /googlebot|bingbot|applebot|baiduspider|crawler|spider|robots/i.test(navigator.userAgent.toLowerCase());
+};
+
 function App() {
-  // bot-detection to skip animation for SEO crawlers
+  const [showAnimation, setShowAnimation] = useState(!detectBot());
+
   useEffect(() => {
-    const ua = navigator.userAgent.toLowerCase();
-    const isBot = /googlebot|bingbot|crawler|spider|robots/i.test(ua);
-    if (isBot) {
+    if (detectBot()) {
       document.body.classList.add('is-bot');
       setShowAnimation(false);
     }
   }, []);
-
-  const [showAnimation, setShowAnimation] = useState(true);
 
   // Dispatch event for prerenderer when content is ready
   useEffect(() => {
