@@ -27,6 +27,8 @@
   <meta name="description"
     content="山形市七日町の自習室 BoostRoom(ブーストルーム)。24時間365日利用可能なコワーキングスペース。高校生、受験生、社会人のための集中空間。Wi-Fi・電源完備。" />
   <link rel="canonical" href="https://boost-room.com/" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="format-detection" content="telephone=no" />
 
   <!-- OGP -->
   <meta property="og:title" content="山形市の自習室 BoostRoom (ブーストルーム) | 24時間利用可能" />
@@ -35,6 +37,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://boost-room.com/" />
   <meta property="og:image" content="https://boost-room.com/ogp.jpg" />
+  <meta property="og:site_name" content="BoostRoom" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Structured Data (JSON-LD) -->
@@ -95,10 +98,43 @@
       "keywords": "自習室,山形市,コワーキングスペース,勉強カフェ,受験勉強,七日町"
     }
   </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "BoostRoom",
+      "url": "https://boost-room.com/"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "山形市の自習室 BoostRoom",
+        "item": "https://boost-room.com/"
+      }]
+    }
+  </script>
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <!-- No-JS Fallback Content for SEO / Googlebot -->
+    <div style="display:none;">
+      <h1>山形市の自習室 BoostRoom (ブーストルーム)</h1>
+      <p>山形市七日町の24時間365日利用可能な自習室・コワーキングスペースです。</p>
+      <ul>
+        <li>対象：高校生、受験生、社会人</li>
+        <li>設備：Wi-Fi、電源、フリードリンク、モニター貸出、完全個室あり</li>
+        <li>立地：七日町1-2-42 TAN6SQUARE 3階（アズ七日町すぐ）</li>
+        <li>料金：ドロップイン（都度利用）330円から、月額会員制あり</li>
+      </ul>
+      <p>山形で一番、没頭できる場所。自分史上最高の集中を。</p>
+    </div>
+  </div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 

@@ -46,9 +46,11 @@ const Footer = () => {
 
                 <div className="footer-bottom">
                     <div className="footer-logo text-navy">
-                        BOOST <span className="text-orange">ROOM</span>
+                        <a href="https://boost-room.com/">
+                            BOOST <span className="text-orange">ROOM</span>
+                        </a>
                     </div>
-                    <p className="copyright text-sub">&copy; 2026 BOOST ROOM. All Rights Reserved.</p>
+                    <p className="copyright text-sub">&copy; {new Date().getFullYear()} 山形市の自習室 BOOST ROOM. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>
