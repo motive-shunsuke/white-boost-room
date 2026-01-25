@@ -118,38 +118,34 @@
       }]
     }
   </script>
+  <script>
+    // Immediate bot detection before React mounts
+    if (/googlebot|bingbot|applebot|baiduspider|crawler|spider|robots/i.test(navigator.userAgent)) {
+      document.documentElement.classList.add('is-bot');
+    }
+  </script>
 </head>
 
 <body>
   <div id="root">
     <!-- Static content for SEO and No-JS environments -->
-    <article class="seo-fallback" style="padding: 20px; font-family: sans-serif; max-width: 800px; margin: 0 auto;">
+    <article class="seo-fallback" style="padding: 2rem; font-family: sans-serif; max-width: 800px; margin: 0 auto;">
       <h1>山形市の自習室・コワーキングスペース BoostRoom (ブーストルーム)</h1>
-      <p>山形市七日町1-2-42 TAN6SQUARE 3階に位置する、24時間365日利用可能な集中空間です。</p>
+      <p>山形市七日町1-2-42 TAN6SQUARE 3階。24時間365日利用可能な集中学習空間です。</p>
 
       <section>
-        <h2>特徴・設備</h2>
-        <p>山形市の高校生、受験生、社会人のために設計された最高の学習環境を提供します。</p>
+        <h2>最高の集中環境を、山形から。</h2>
+        <p>山形市の高校生、受験生、社会人のために設計された「没頭できる場所」を提供します。</p>
         <ul>
-          <li><strong>24時間365日オープン</strong>：早朝から深夜まで、あなたのペースで利用可能。</li>
-          <li><strong>高速Wi-Fi・全席電源完備</strong>：PC作業やオンライン授業も快適。</li>
-          <li><strong>充実の設備</strong>：フリードリンク、モニター、各種文房具の貸出。</li>
-          <li><strong>選べるエリア</strong>：ラウンジ、集中エリア、完全個室、会議室。</li>
+          <li><strong>24時間365日オープン</strong>：早朝から深夜、土日祝日も利用可能。</li>
+          <li><strong>七日町1-2-42 TAN6SQUARE 3階</strong>：アズ七日町すぐの好アクセス。</li>
+          <li><strong>設備</strong>：Wi-Fi、電源、フリードリンク、モニター、完全個室、会議室。</li>
+          <li><strong>料金</strong>：1時間330円〜、月額2,500円〜。</li>
         </ul>
       </section>
 
-      <section>
-        <h2>料金プラン</h2>
-        <p>ドロップイン（1時間330円）から、社会人・学生向けの定額プランまで幅広くご用意しています。</p>
-        <ul>
-          <li>1Hプラン：330円</li>
-          <li>1Dayプラン：1,200円</li>
-          <li>月額会員：2,500円〜（学生割引あり）</li>
-        </ul>
-      </section>
-
-      <p><strong>アクセス</strong>：山形県山形市七日町1-2-42 TAN6SQUARE 3階（アズ七日町すぐ、山形グランドホテル近く）</p>
-      <p><strong>お問い合わせ</strong>：090-2978-7412</p>
+      <p>山形で集中して勉強したい、作業したいならBoostRoomへ。</p>
+      <p><strong>お問い合わせ電話番号</strong>：090-2978-7412</p>
     </article>
   </div>
   <script type="module" src="/src/main.jsx"></script>
