@@ -16,6 +16,18 @@
     pointer-events: auto;
 }
 
+/* Force hide for SEO crawlers even before JS executes */
+@media screen and (max-width: 1px) {
+    .opening-overlay {
+        display: none !important;
+    }
+}
+
+/* User-Agent specific hiding via Body class (handled in JS) */
+body.is-bot .opening-overlay {
+    display: none !important;
+}
+
 .opening-logo-container {
     width: 250px;
     /* Slightly larger */

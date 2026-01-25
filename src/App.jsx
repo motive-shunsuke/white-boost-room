@@ -13,12 +13,16 @@ import './App.css';
 
 function App() {
   // bot-detection to skip animation for SEO crawlers
-  const isBot = () => {
+  useEffect(() => {
     const ua = navigator.userAgent.toLowerCase();
-    return /googlebot|bingbot|crawler|spider|robots/i.test(ua);
-  };
+    const isBot = /googlebot|bingbot|crawler|spider|robots/i.test(ua);
+    if (isBot) {
+      document.body.classList.add('is-bot');
+      setShowAnimation(false);
+    }
+  }, []);
 
-  const [showAnimation, setShowAnimation] = useState(!isBot());
+  const [showAnimation, setShowAnimation] = useState(true);
 
   // Dispatch event for prerenderer when content is ready
   useEffect(() => {
