@@ -122,18 +122,35 @@
 
 <body>
   <div id="root">
-    <!-- No-JS Fallback Content for SEO / Googlebot -->
-    <div style="display:none;">
-      <h1>山形市の自習室 BoostRoom (ブーストルーム)</h1>
-      <p>山形市七日町の24時間365日利用可能な自習室・コワーキングスペースです。</p>
-      <ul>
-        <li>対象：高校生、受験生、社会人</li>
-        <li>設備：Wi-Fi、電源、フリードリンク、モニター貸出、完全個室あり</li>
-        <li>立地：七日町1-2-42 TAN6SQUARE 3階（アズ七日町すぐ）</li>
-        <li>料金：ドロップイン（都度利用）330円から、月額会員制あり</li>
-      </ul>
-      <p>山形で一番、没頭できる場所。自分史上最高の集中を。</p>
-    </div>
+    <!-- Static content for SEO and No-JS environments -->
+    <article class="seo-fallback" style="padding: 20px; font-family: sans-serif; max-width: 800px; margin: 0 auto;">
+      <h1>山形市の自習室・コワーキングスペース BoostRoom (ブーストルーム)</h1>
+      <p>山形市七日町1-2-42 TAN6SQUARE 3階に位置する、24時間365日利用可能な集中空間です。</p>
+
+      <section>
+        <h2>特徴・設備</h2>
+        <p>山形市の高校生、受験生、社会人のために設計された最高の学習環境を提供します。</p>
+        <ul>
+          <li><strong>24時間365日オープン</strong>：早朝から深夜まで、あなたのペースで利用可能。</li>
+          <li><strong>高速Wi-Fi・全席電源完備</strong>：PC作業やオンライン授業も快適。</li>
+          <li><strong>充実の設備</strong>：フリードリンク、モニター、各種文房具の貸出。</li>
+          <li><strong>選べるエリア</strong>：ラウンジ、集中エリア、完全個室、会議室。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>料金プラン</h2>
+        <p>ドロップイン（1時間330円）から、社会人・学生向けの定額プランまで幅広くご用意しています。</p>
+        <ul>
+          <li>1Hプラン：330円</li>
+          <li>1Dayプラン：1,200円</li>
+          <li>月額会員：2,500円〜（学生割引あり）</li>
+        </ul>
+      </section>
+
+      <p><strong>アクセス</strong>：山形県山形市七日町1-2-42 TAN6SQUARE 3階（アズ七日町すぐ、山形グランドホテル近く）</p>
+      <p><strong>お問い合わせ</strong>：090-2978-7412</p>
+    </article>
   </div>
   <script type="module" src="/src/main.jsx"></script>
 </body>

@@ -12,7 +12,13 @@ import OpeningAnimation from './components/OpeningAnimation';
 import './App.css';
 
 function App() {
-  const [showAnimation, setShowAnimation] = useState(true);
+  // bot-detection to skip animation for SEO crawlers
+  const isBot = () => {
+    const ua = navigator.userAgent.toLowerCase();
+    return /googlebot|bingbot|crawler|spider|robots/i.test(ua);
+  };
+
+  const [showAnimation, setShowAnimation] = useState(!isBot());
 
   // Dispatch event for prerenderer when content is ready
   useEffect(() => {
