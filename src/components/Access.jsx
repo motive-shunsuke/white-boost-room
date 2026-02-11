@@ -20,7 +20,7 @@ const Access = () => {
                                 <p className="address text-navy">
                                     〒990-0042<br />
                                     山形県山形市七日町1-2-42<br />
-                                    <span className="building text-navy">TAN6SQUARE 3階</span>
+                                    <span className="building text-navy">TAN6SQUARE 3階奥 東側</span>
                                 </p>
                                 <div className="landmarks-container">
                                     <span className="landmark-badge text-sub">アズ七日町すぐ</span>
