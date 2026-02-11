@@ -42,14 +42,14 @@ const Access = () => {
                     {/* Right Side: Map */}
                     <div className="map-container">
                         <iframe
-                            src="https://maps.google.com/maps?q=山形県山形市七日町1-2-42+TAN6SQUARE+3階&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                            src="https://maps.google.com/maps?q=38.251625,140.338125&t=&z=17&ie=UTF8&iwloc=&output=embed"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}
                             allowFullScreen=""
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
-                            title="Google Maps"
+                            title="Google Maps - BoostRoom Yamagata"
                             className="map-iframe"
                         ></iframe>
                     </div>
