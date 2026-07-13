@@ -174,26 +174,6 @@ const Features = () => {
                             </div>
                         </div>
 
-                        {/* Silent */}
-                        <div className="area-card">
-                            <div className="area-header bg-silent">
-                                <span className="area-eng">SILENT</span>
-                                <span className="area-jp">サイレントブース</span>
-                            </div>
-                            <div className="area-body">
-                                <p>完全防音の個室ブース。<br />音読学習や、Web授業の受講にも最適です。</p>
-                                <div className="area-tags">
-                                    <span className="tag">完全個室</span>
-                                    <span className="tag">通話OK</span>
-                                </div>
-                                <div className="lounge-carousel-wrapper coming-soon-wrapper">
-                                    <div className="coming-soon-container">
-                                        <p className="coming-soon-text">Coming Soon...</p>
-                                        <p className="coming-soon-sub">写真は準備中です</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
