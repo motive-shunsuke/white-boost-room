@@ -18,12 +18,13 @@ const detectBot = () => {
 };
 
 function App() {
+  // Initial state already excludes bots via !detectBot(); the effect only
+  // needs to tag the DOM so bot-specific CSS can apply.
   const [showAnimation, setShowAnimation] = useState(!detectBot());
 
   useEffect(() => {
     if (detectBot()) {
       document.body.classList.add('is-bot');
-      setShowAnimation(false);
     }
   }, []);
 
